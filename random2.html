@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>random nunber</title>
+  <link rel="stylesheet" href="random2.css">
+</head>
+<body>
+  <div id="top">
+    <img src="image/library-419254_1280.jpg" alt="library-419254_1280" id="book">
+  </div>
+  <div>
+    <img src="image/28433.png" alt="28433" id="frame">
+  </div>
+  <div>
+    <button id="font-button" class="light">FONT</button>
+    <button id="color-button" class="light" onClick="randomColor()">COLOR</button>
+  </div>
+  <div id="random">
+    <p>- - --- ランダムに表示されます --- - -</p>
+    <div class="flex1">
+      <input type="text" id="1" class="textbox" value="" placeholder="-- 名詞 --">
+      <button class="copy" onClick="copy0()">COPY</button>
+      <button id="one" class="button" onClick="one()">ONE</button>
+    </div>
+    <div class="flex1">
+      <input type="text" id="2" class="textbox" value="" placeholder="-- 抽象 --">
+      <button class="copy" onClick="copy1()">COPY</button>
+      <button id="two" class="button" onClick="two()">TWO</button>
+    </div>
+    <div class="flex1">
+      <input type="text" id="3" class="textbox" value="" placeholder="-- 感情 --">
+      <button class="copy" onClick="copy2()">COPY</button>
+      <button id="three" class="button" onClick="three()">THREE</button>
+    </div>
+    <div class="flex1">
+      <input type="text" id="4" class="textbox" value="" placeholder="-- 柄・模様 --">
+      <button class="copy" onClick="copy3()">COPY</button>
+      <button id="four" class="button" onClick="four()">FOUR</button>
+    </div>
+    <div class="flex1">
+      <input type="text" id="5" class="textbox" value="" placeholder="-- 色 --">
+      <button class="copy" onClick="copy4()">COPY</button>
+      <button id="five" class="button" onClick="five()">FIVE</button>
+    </div>
+    <div class="flex2">
+      <input type="text" id="log" placeholder="- -- 名詞　抽象　感情　柄・模様　色 -- -">
+      <button id="copy" class="copy" onClick="copy5()">COPY</button>
+    </div>
+  </div>
+  <div class="about">
+    <span class="neon flash">A<span>A</span></span>
+    <span class="neon flash" id="B">B<span>B</span></span>
+    <span class="neon flash" id="O">O<span>O</span></span>
+    <span class="neon flash" id="U">U<span>U</span></span>
+    <span class="neon flash" id="T">T<span>T</span></span>
+  </div>
+  <div id="box">
+    <p class="start">
+      ・<span class="marker1 shadow"> ONE </span>は、<span class="marker1 shadow"> 名詞 </span>がでます。<br>
+      ＜<span class="marker1 shadow"> 例 </span>＞ 林檎、星、お菓子
+    </p>
+    <p class="start">
+      ・<span class="marker2 shadow"> TWO </span>は、<span class="marker2 shadow"> 抽象的な言葉 </span>がでます。<br>
+      ＜<span class="marker2 shadow"> 例 </span>＞ 平和、正義、愛
+    </p>
+    <p class="start">
+      ・<span class="marker3 shadow"> THREE </span> は、<span class="marker3 shadow"> 感情を表す言葉 </span>がでます。<br>
+      ＜<span class="marker3 shadow"> 例 </span>＞ 幸せ、尊敬、憂鬱
+    </p>
+    <p class="start">
+      ・<span class="marker4 shadow"> FOUR </span>は、<span class="marker4 shadow"> 柄・模様 </span>がでます。<br>
+      ＜<span class="marker4 shadow"> 例 </span>＞ 水玉、市松模様、ストライプ
+    </p>
+    <p class="start">
+      ・<span class="marker5 shadow"> FIVE </span> は、<span class="marker5 shadow"> 色 </span>がでます。<br>
+      ＜<span class="marker5 shadow"> 例 </span>＞ 赤、オレンジ、水色
+    </p>
+    <p class="start">
+      ・『 COPY 』を押すと、コピーできます。
+    </p>
+    <p>右上のボタンはそれぞれを押すと...</p>
+  </div>
+  <script src="random2.js"></script>
+  <script src="array.js"></script>
+</body>
+</html>
