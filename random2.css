@@ -1,0 +1,432 @@
+/* 
+"Cabin Sketch" is lisenced under the SIL Open Font License 1.1
+https://fonts.google.com/specimen/Cabin+Sketch?query=Cabin+Sketch
+https://www.google.com/fonts/attribution
+http://scripts.sil.org/OFL
+*/
+/* 
+"Calistoga" is lisenced under the SIL Open Font License 1.1
+https://fonts.google.com/specimen/Calistoga?query=Calistoga#standard-styles
+https://www.google.com/fonts/attribution
+http://scripts.sil.org/OFL
+*/
+/* 
+/* 
+"Fredericka the Great" is lisenced under the SIL Open Font License 1.1
+https://fonts.google.com/specimen/Fredericka+the+Great?query=Fredericka+the+Great
+https://www.google.com/fonts/attribution
+http://scripts.sil.org/OFL
+*/
+/* 
+"Kiwi Maru" is lisenced under the SIL Open Font License 1.1
+https://fonts.google.com/specimen/Fredericka+the+Great?query=Fredericka+the+Great
+https://www.google.com/fonts/attribution
+http://scripts.sil.org/OFL
+*/
+/* 
+"Monofett" is lisenced under the SIL Open Font License 1.1
+https://fonts.google.com/specimen/Monofett?query=Monofett
+https://www.google.com/fonts/attribution
+http://scripts.sil.org/OFL
+*/
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: repeating-linear-gradient( rgba(35, 24, 21, 1), rgba(35, 24, 21, 1), rgba(18, 12, 33, 0.8), rgba(0, 0, 40, 0.4)),
+  url("image/abstract-3592117_1280.jpg");
+  background-size: cover;
+}
+
+/*本の画像*/
+#top {
+  width: 100%;
+  height: 150px;
+}
+#top:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0px;
+  left: 0px;
+  background: -webkit-linear-gradient(top, transparent, transparent, #231815 );
+}
+#book {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/*ボタン*/
+#font-button {
+  top: 0;
+  right: 0;
+}
+#color-button {
+  top: 80px;
+  right: 0;
+}
+.light {
+  display:inline-block;
+  position: absolute;
+  width:60px;
+  height:60px;
+  margin:10px;
+  color: #fffded;
+  background-color: transparent;
+  border: solid 1px #fffded;
+  border-radius:90px;
+  font-family: 'Calistoga', cursive;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+  text-shadow: 0px 0px 3px #fffded;
+}
+.light:active {
+  box-shadow: 0px 0px 10px #fffded, 0px 0px 10px #fffded inset;
+}
+.font1 {
+  font-family: 'Fredericka the Great', cursive;
+  pointer-events: none;
+}
+.font2 {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+/*枠*/
+#frame {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+/*textbox&ボタン*/
+#random {
+  margin: 30px auto 50px;
+  text-align: center;
+}
+.flex1 {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+}
+.flex2 {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+}
+.textbox {
+  width: 250px;
+  height: 25px;
+  margin: 0 3px;
+  padding: 0 10px;
+  color: #fffded;
+  background-color: transparent;
+  border: solid 1px #fffded;
+  border-radius: 8px;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+  text-shadow: 0px 0px 3px #fffded;
+}
+input::placeholder {
+  opacity: 0.65;
+  color: #fffded;
+}
+
+/*コピーボタン*/
+.copy {
+  display: inline-block;
+  width: 60px;
+  margin: 0 3px;
+  padding: 8px 0;
+  color: #fffded;
+  background-color: transparent;
+  border: solid 1px #fffded;
+  border-radius: 8px;
+  font-family: 'Calistoga', cursive;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+  text-shadow: 0px 0px 3px #fffded;
+}
+#copy {
+  width: 80px;
+  margin: 5px 0;
+}
+.copy:active,#copy:active {
+  box-shadow: 0px 0px 10px #fffded, 0px 0px 10px #fffded inset;
+}
+
+/*ボタン*/
+.button {
+  display: inline-block;
+  width: 80px;
+  margin: 0 3px;
+  padding: 8px 0;
+  background-color: transparent;
+  border-radius: 8px;
+  font-family: 'Calistoga', cursive;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*ボタン　1*/
+#one {
+  color: var(--test1-color);
+  border: solid 1px var(--test1-color);
+  box-shadow: 0px 0px 5px var(--test1-color), 0px 0px 5px var(--test1-color) inset;
+  text-shadow: 0px 0px 3px var(--test1-color);
+}
+#one:active {
+  box-shadow: 0px 0px 10px var(--test1-color), 0px 0px 10px var(--test1-color) inset;
+  text-shadow: 0px 0px 3px var(--test1-color);
+}
+
+/*ボタン　2*/
+#two {
+  color: var(--test2-color);
+  border: solid 1px var(--test2-color);
+  box-shadow: 0px 0px 5px var(--test2-color), 0px 0px 5px var(--test2-color) inset;
+  text-shadow: 0px 0px 3px var(--test2-color);
+}
+#two:active {
+  box-shadow: 0px 0px 10px var(--test2-color), 0px 0px 10px var(--test2-color) inset;
+  text-shadow: 0px 0px 3px var(--test2-color);
+}
+
+/*ボタン　3*/
+#three {
+  color: var(--test3-color);
+  border: solid 1px var(--test3-color);
+  box-shadow: 0px 0px 5px var(--test3-color), 0px 0px 5px var(--test3-color) inset;
+  text-shadow: 0px 0px 3px var(--test3-color);
+}
+#three:active {
+  box-shadow: 0px 0px 10px var(--test3-color), 0px 0px 10px var(--test3-color) inset;
+  text-shadow: 0px 0px 3px var(--test3-color);
+}
+
+/*ボタン　4*/
+#four {
+  color: var(--test4-color);
+  border: solid 1px var(--test4-color);
+  box-shadow: 0px 0px 5px var(--test4-color), 0px 0px 5px var(--test4-color) inset;
+  text-shadow: 0px 0px 3px var(--test4-color);
+}
+#four:active {
+  box-shadow: 0px 0px 10px var(--test4-color), 0px 0px 10px var(--test4-color) inset;
+  text-shadow: 0px 0px 3px var(--test4-color);
+}
+
+/*ボタン　5*/
+#five {
+  color: var(--test5-color);
+  border: solid 1px var(--test5-color);
+  box-shadow: 0px 0px 5px var(--test5-color), 0px 0px 5px var(--test5-color) inset;
+  text-shadow: 0px 0px 3px var(--test5-color);
+}
+#five:active {
+  box-shadow: 0px 0px 10px var(--test5-color), 0px 0px 10px var(--test5-color) inset;
+  text-shadow: 0px 0px 3px var(--test5-color);
+}
+
+/*ログ*/
+#log {
+  width: 470px;
+  height: 30px;
+}
+
+/*ABOUT*/
+.about {
+  text-align: center;
+}
+.neon {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  font-family: 'Monofett', cursive;
+  font-size: 100px;
+  -webkit-text-stroke: 2px #fceef4;
+  text-shadow: 0 0 50px #e0437d;
+}
+.neon span {
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  opacity: 0.3;
+}
+.flash {
+  animation: flash-anime 5s linear infinite;
+}
+@keyframes flash-anime {
+  0%   {opacity: 1;}
+  20%  {opacity: 1;}
+  21%  {opacity: 0.3;}
+  22%  {opacity: 1;}
+  75% {opacity: 1;}
+  76% {opacity: 0.6;}
+  77% {opacity: 1;}
+  78% {opacity: 0.3;}
+  79% {opacity: 1;}
+}
+@-moz-keyframes flash-anime {
+  0%   {opacity: 1;}
+  20%  {opacity: 1;}
+  21%  {opacity: 0.3;}
+  22%  {opacity: 1;}
+  75% {opacity: 1;}
+  76% {opacity: 0.6;}
+  77% {opacity: 1;}
+  78% {opacity: 0.3;}
+  79% {opacity: 1;}
+}
+@-webkit-keyframes flash-anime {
+  0%   {opacity: 1;}
+  20%  {opacity: 1;}
+  21%  {opacity: 0.3;}
+  22%  {opacity: 1;}
+  75% {opacity: 1;}
+  76% {opacity: 0.6;}
+  77% {opacity: 1;}
+  78% {opacity: 0.3;}
+  79% {opacity: 1;}
+}
+
+/*ABOUT 文字*/
+#B {
+  -webkit-text-stroke: 2px #fef8f0;
+  text-shadow: 0 0 50px #e16c70;
+}
+#O {
+  -webkit-text-stroke: 2px #fef6f1;
+  text-shadow: 0 0 50px #e29562;
+}
+#U {
+  -webkit-text-stroke: 2px #fffbee;
+  text-shadow: 0 0 50px #e3ba56;
+}
+#T {
+  -webkit-text-stroke: 2px #fffded;
+  text-shadow: 0 0 50px #e4e647;
+}
+
+/*pタグ*/
+p {
+  color: #fffded;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  text-shadow: 0 0 3px #fffded;
+}
+
+/*説明欄*/
+#box {
+  width: 400px;
+  height: 470px;
+  margin: 20px auto;
+  padding: 8px 16px;
+  left: 0;
+  right: 0;
+  border: solid 1px #fffded;
+  border-radius: 9px;
+  text-align: center;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+}
+#box p {
+  margin: 23px 0;
+  color: #fffded;
+  text-shadow: 0 0 25px #fffded;
+}
+.start {
+  text-align: start;
+}
+
+/*マーカー*/
+.marker1 {
+  background: linear-gradient(transparent 40%,var(--test1-color) 40%);
+}
+.marker2 {
+  background: linear-gradient(transparent 40%,var(--test2-color) 40%);
+}
+.marker3 {
+  background: linear-gradient(transparent 40%,var(--test3-color) 40%);
+}
+.marker4{
+  background: linear-gradient(transparent 40%,var(--test4-color) 40%);
+}
+.marker5 {
+  background: linear-gradient(transparent 40%,var(--test5-color) 40%);
+}
+.shadow {
+  text-shadow: 0 0 3px #cc673a;
+}
+
+@media screen and (max-width:549px) {
+
+/*ボタン*/
+#font-button {
+  right: 80px;
+}
+#color-button {
+  top: 0px;
+}
+
+/*枠*/
+#frame {
+  height: 420px;
+}
+
+/*textbox&ボタン*/
+#random {
+  margin: 30px auto;
+}
+
+/*ログ*/
+#log {
+  width: 90%;
+  height: 40px;
+}
+}
+
+@media screen and (max-width:459px) {
+
+/*説明欄*/
+#box {
+  width: 310px;
+  height: 420px;
+}
+#box p {
+  margin: 18px 0;
+}
+}
+
+@media screen and (max-width:369px) {
+
+/*ABOUT*/
+.neon {
+  font-size: 80px;
+}
+
+/*説明欄*/
+#box {
+  width: 250px;
+  height: 350px;
+  margin: 15px auto;
+  padding: 8px;
+  font-size: small;
+}
+#box p {
+  margin: 15px 0;
+}
+}
