@@ -128,7 +128,7 @@ body {
   width: 270px;
   height: 25px;
   margin: 0 3px;
-  padding: 0;
+  padding: 0 10px;
   color: #fffded;
   background-color: transparent;
   border: solid 1px #fffded;
@@ -393,7 +393,7 @@ p {
 
 /*ログ*/
 #log {
-  width: 95%;
+  width: 90%;
   height: 40px;
 }
 }
